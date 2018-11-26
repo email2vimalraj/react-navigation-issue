@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createDrawerNavigator, createAppContainer } from "react-navigation";
 
 class HomeScreen extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class HomeScreen extends React.Component {
   }
 }
 
-const AppNavigator = createStackNavigator({
+const AppNavigator = createDrawerNavigator({
   Home: {
     screen: HomeScreen
   }
